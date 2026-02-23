@@ -31,7 +31,7 @@ A campus transport service books rides for students. It calculates distance, all
 ```bash
 cd SOLID/Ex10/src
 javac *.java
-java Main
+java Demo03
 ```
 
 ## 8. Sample output

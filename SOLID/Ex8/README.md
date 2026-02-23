@@ -32,7 +32,7 @@ Clubs have different roles: treasurer, secretary, event lead. The admin tool int
 ```bash
 cd SOLID/Ex8/src
 javac *.java
-java Main
+java Demo03
 ```
 
 ## 8. Sample output

@@ -21,7 +21,7 @@ A smart classroom controller manages devices: projector, lights, AC, attendance 
 - Preserve console output.
 
 ## 5. Constraints
-- Preserve output for `Main`.
+- Preserve output for `Demo03`.
 - Keep device class names unchanged.
 - No external libs.
 
@@ -33,7 +33,7 @@ A smart classroom controller manages devices: projector, lights, AC, attendance 
 ```bash
 cd SOLID/Ex7/src
 javac *.java
-java Main
+java Demo03
 ```
 
 ## 8. Sample output

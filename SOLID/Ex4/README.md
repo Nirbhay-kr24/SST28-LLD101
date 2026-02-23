@@ -34,7 +34,7 @@ Checkpoint D: Preserve output.
 ```bash
 cd SOLID/Ex4/src
 javac *.java
-java Main
+java Demo03
 ```
 
 ## 8. Sample output
