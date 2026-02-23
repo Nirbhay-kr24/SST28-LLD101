@@ -6,6 +6,7 @@ public class OnboardingService {
     private final StudentValidator validator;
     private final StudentRepository repository;
 
+
     public OnboardingService(StudentInputParser parser, StudentValidator validator, StudentRepository repository) {
 
         this.parser = parser;
@@ -28,8 +29,7 @@ public class OnboardingService {
 
 
         if (!errors.isEmpty()) {
-            System.out.println("ERROR: cannot register");
-            for (String e : errors) System.out.println("- " + e);
+            ConsoleReporter.printErrors(errors);
             return;
         }
 
@@ -38,9 +38,6 @@ public class OnboardingService {
 
         repository.save(rec);
 
-        System.out.println("OK: created student " + id);
-        System.out.println("Saved. Total students: " + repository.count());
-        System.out.println("CONFIRMATION:");
-        System.out.println(rec);
+        ConsoleReporter.printSuccess(id, rec, repository.count());
     }
 }
