@@ -1,10 +1,10 @@
 import java.util.*;
 
 public class BookingRequest {
-    PricingComponent roomType;
-    List<PricingComponent> addOns;
+    public final int roomType;
+    public final List<AddOn> addOns;
 
-    public BookingRequest(PricingComponent roomType, List<PricingComponent> addOns) {
+    public BookingRequest(int roomType, List<AddOn> addOns) {
         this.roomType = roomType;
         this.addOns = addOns;
     }
