@@ -6,6 +6,7 @@ public class Demo07 {
         reg.add(new LightsPanel());
         reg.add(new AirConditioner());
         reg.add(new AttendanceScanner());
+        reg.add(new SmartBoard());
 
         ClassroomController c = new ClassroomController(reg);
         c.startClass();
